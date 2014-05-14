@@ -5,7 +5,26 @@
 }
 
 #body {
+	position: relative;
 	background-color: black;
 	height: 565px;
 	width: 993px;
+}
+
+img, #main {
+	display: inline-block;
+	position: absolute;
+}
+
+img {
+	left: 35px;
+	top: 14px;
+}
+
+#main {
+	background-color: gray;
+	height: 258px;
+	width: 534px;
+	left: 428px;
+	top: 16px;
 }
