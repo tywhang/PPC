@@ -1,8 +1,71 @@
+.arrow {
+	top: 209px;
+	left: 185px;
+	position: absolute;
+	height: 0;
+	width: 0;
+	border-top: 10px solid transparent;
+	border-left: 10px solid black;
+	border-bottom: 11px solid transparent;
+}
+
+.yArrow {
+	top: 211px;
+	left: 185px;
+	position: absolute;
+	height: 0;
+	width: 0;
+	border-top: 8px solid transparent;
+	border-left: 8px solid yellow;
+	border-bottom: 9px solid transparent;
+}
+
+
+body {
+	font-family: Helvetica, sans-serif;
+}
+
 #header {
-	background-color: lightGray;
+	position: relative;
 	height: 128px;
 	width: 993px;
 }
+
+	#logo, #header h3, ul {
+		position: absolute;
+	}
+
+	#logo {
+		left: 20px;
+		top: 1px;
+	}
+
+	#header h3 {
+		font-size: 18px;
+		right: 35px;
+		top: 10px;
+	}
+
+	#header ul {
+		top: 57px;
+		font-size: 11px;
+		font-weight: bold;
+		border-top: 1px solid #777;
+		width: 919px;
+		padding: 0 37px;
+	}
+
+		#header ul li {
+			list-style-type: none;
+			display: inline-block;
+			border-right: 1px solid #e2e2e2;
+			padding: 8px 19px;
+			color: #777;
+		}
+
+			#header ul li:first-child {
+				border-left: 1px solid #e2e2e2;
+			}
 
 #body {
 	position: relative;
@@ -11,12 +74,12 @@
 	width: 993px;
 }
 
-img, #main {
+#building, #main {
 	display: inline-block;
 	position: absolute;
 }
 
-img {
+#building {
 	left: 35px;
 	top: 14px;
 }
@@ -27,4 +90,71 @@ img {
 	width: 534px;
 	left: 428px;
 	top: 16px;
+}
+
+	#main h4 {
+		background-color: yellow;
+		margin: 0;
+		padding: 7px 9px;
+		font-size: 12px;
+	}
+
+	#main h5, p {
+		color: white;
+		margin: 12px 20px 13px 14px;
+	}
+
+	#main p {
+		font-size: 12px;
+	}
+
+#automotive, #commercial, #industrial, #diesel {
+	position: absolute;
+	background-color: white;
+	height: 244px;
+	width: 216px;
+	top: 305px;
+}
+
+	#automotive h5, #commercial h5, #industrial h5, #diesel h5 {
+		font-size: 11px;
+		margin: 0;
+		padding: 7px 11px;
+		background-color: yellow;
+	}
+
+	#automotive p, #commercial p, #industrial p, #diesel p {
+		font-size: 10px;
+		color: black;
+		margin: 5px 20px;
+	}
+
+	#automotive a, #commercial a, #industrial a, #diesel a {
+		position: absolute;
+		top: 209px;
+		left: 106px;
+		background-color: yellow;
+		color: black;
+		border: 2px solid black;
+		border-right: none;
+		border-radius: 5px 0 0 5px;
+		padding: 4px 8px 4px 15px;
+		text-decoration: none;
+		font-size: 8px;
+	}
+
+#automotive {
+	left: 38px;
+}
+
+#commercial {
+	left: 275px;
+}
+
+#industrial {
+	left: 512px;
+}
+
+#diesel {
+	left: 749px;
 }
